@@ -1,0 +1,38 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 400px;
+}
+
+#container{
+    height: 100vh;
+    position: relative;
+}
+
+main{
+    min-height: 81vh;
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-size: 35px;
+    margin: 20px 0px;
+}
+
+main a{
+    margin: 100px 0px;
+    font-size: 20px;
+}

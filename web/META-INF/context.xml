@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/control-incidencias">
+  <Resource auth="Container" 
+            driverClassName="org.mariadb.jdbc.Driver"
+            maxActive="15" maxIdle="3" maxTotal="100" 
+            maxWaitMillis="10000" 
+            name="jdbc/control_incidencias" 
+            password="usuario" 
+            removeAbandonedOnBorrow="true" 
+            type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3306/control_incidencias" 
+            username="usuario"/>
+</Context>

@@ -1,0 +1,58 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    min-width: 400px;
+}
+
+header{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+}
+
+header > div:nth-child(2){
+    padding: 0px 40px;
+}
+
+header > div:nth-child(2) > a:nth-child(1){
+    margin: 0px 25px;
+}
+header > div:nth-child(2) > a:nth-child(2){
+    margin: 0px 25px;
+}
+
+main{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px 0px;
+}

@@ -1,0 +1,18 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<footer>  
+
+    <div>
+        <a href=" https://es-es.facebook.com/ "> <img src="public/img/facebook.png" alt="Facebook"/></a>
+        <a href=" https://twitter.com/?lang=es "> <img src="public/img/twitter.png" alt="Twitter"/></a>
+        <a href=" https://www.instagram.com/?hl=es "> <img src="public/img/instagram.png" alt="Instagram"/></a>
+        <a href=" https://www.youtube.com/ "> <img src="public/img/youtube.png" alt="Youtube"/></a>
+    </div>
+
+    <div>
+        <a href="#"> Julián David Ramos Gomez
+            <p>Todos los Derechos reservados</p>
+        </a>
+    </div>
+
+</footer>

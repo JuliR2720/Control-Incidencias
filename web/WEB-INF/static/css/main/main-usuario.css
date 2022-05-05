@@ -1,0 +1,40 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 400px;
+}
+
+#container{
+    height: 100vh;
+    position: relative;
+}
+
+main{
+    min-height: 80vh;
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2{
+    font-family: cursive;
+}

@@ -1,0 +1,57 @@
+<%@page import="org.japo.java.entities.Usuario"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+    /* Obtener Sesion */
+    HttpSession _sesion = request.getSession(false);
+
+    /* Declaracion de Usuario y Nombre */
+    String _avatar = null;
+    String _user = null;
+
+    if (_sesion != null) {
+        Usuario _usuario = (Usuario) _sesion.getAttribute("usuario");
+        if (_usuario != null) {
+            _avatar = _usuario.getAvatar();
+            _user = _usuario.getUser();
+
+        }
+    }
+%>
+<header>
+
+    <% if (_avatar != null) {%>
+    <div> 
+        <a href="/control-incidencias?cmd=visita-landing">
+            <img src="public/img/logo-cine.png" alt="logo-cine"/> 
+        </a>
+        <h1>Virtual World Pictures</h1>  
+    </div>
+
+    <div>
+        <div>
+            <a href="/control-incidencias?cmd=usuario-logout">
+                <img src="<%= _avatar%>" alt="avatar"/>
+                <p> <%= _user%></p>
+            </a>
+        </div>
+    </div>
+
+    <% } else { %>
+    <div> 
+        <a href="/control-incidencias?cmd=visita-landing">
+            <img src="public/img/logo-cine.png" alt="logo-cine"/> 
+        </a>
+        <h1>Virtual World Pictures</h1>  
+    </div>
+
+    <div> 
+        <a href="/control-incidencias?cmd=visita-landing"> Inicio </a>
+        <a href="/control-incidencias?cmd=usuario-login"> Login </a>
+        <a href="/control-incidencias?cmd=usuario-registro"> Registro </a>
+        <a href="/control-incidencias?cmd=visita-accion"> Peliculas </a>
+    </div>
+    <%}%>
+
+</header>
+<script src="public/js/partial/header.js"></script>
