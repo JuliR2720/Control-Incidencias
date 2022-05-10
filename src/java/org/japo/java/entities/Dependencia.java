@@ -14,19 +14,17 @@ public final class Dependencia implements Serializable {
     private int id;
     private String nombre;
     private String info;
-    private String codigo;
 
     // Constructor Predeterminado
     public Dependencia() {
         id = UtilesDependencias.DEF_ID;
         nombre = UtilesDependencias.DEF_NOMBRE;
         info = UtilesDependencias.DEF_INFO;
-        codigo = UtilesDependencias.DEF_CODIGO;
 
     }
 
     // Contructor Parametrizado
-    public Dependencia(int id, String nombre, String info, String codigo) {
+    public Dependencia(int id, String nombre, String info) {
         if (UtilesDependencias.validarId(id)) {
             this.id = id;
         } else {
@@ -41,11 +39,6 @@ public final class Dependencia implements Serializable {
             this.info = info;
         } else {
             this.info = UtilesDependencias.DEF_INFO;
-        }
-        if (UtilesDependencias.validarCodigo(codigo)) {
-            this.codigo = codigo;
-        } else {
-            this.codigo = UtilesDependencias.DEF_CODIGO;
         }
     }
 
@@ -80,16 +73,7 @@ public final class Dependencia implements Serializable {
         }
     }
 
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        if (UtilesDependencias.validarCodigo(codigo)) {
-            this.codigo = codigo;
-        }
-    }
-
+    // Equals
     @Override
     public boolean equals(Object o) {
         boolean testOK = false;
@@ -97,20 +81,19 @@ public final class Dependencia implements Serializable {
             Dependencia e = (Dependencia) o;
             testOK = id == e.getId()
                     && nombre.equals(e.getNombre())
-                    && info.equals(e.getInfo())
-                    && codigo.equals(e.getCodigo());
+                    && info.equals(e.getInfo());
         }
 
         return testOK;
     }
 
+    // HashCode
     @Override
     public int hashCode() {
         int hash = 5;
         hash = 97 * hash + this.id;
         hash = 97 * hash + Objects.hashCode(this.nombre);
         hash = 97 * hash + Objects.hashCode(this.info);
-        hash = 97 * hash + Objects.hashCode(this.codigo);
         return hash;
     }
 

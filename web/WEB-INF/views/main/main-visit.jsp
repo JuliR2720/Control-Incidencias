@@ -1,7 +1,5 @@
-<%@page import="org.japo.java.entities.Perfil"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,7 +16,7 @@
 
             <%@include file="../partial/header.jspf" %>
             <main>
-                <h1> Estas en el Main Basico </h1>
+                <h1> Estas en el Main de Visita </h1>
                 <img src="public/img/astronauta.jpg" alt="astronauta"/>
             </main>
             <%@include file="../partial/footer.jspf" %>

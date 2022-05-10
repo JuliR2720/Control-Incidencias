@@ -14,12 +14,10 @@ public final class UtilesDependencias {
     public static final int DEF_ID = 0;
     public static final String DEF_NOMBRE = "Indefinido";
     public static final String DEF_INFO = "Especialidad Indefinida";
-    public static final String DEF_CODIGO = "I44";
 
     // Expresiones Regulares
-    public static final String REG_NOMBRE = "[\\w áéíóúñÁÉÍÓÚÑçÇ]{3,30}";
+    public static final String REG_NOMBRE = "[\\w áéíóúñÁÉÍÓÚÑçÇ]{3,10}";
     public static final String REG_INFO = "[\\w áéíóúñÁÉÍÓÚÑçÇ]{3,100}";
-    public static final String REG_CODIGO = "\\w{3,10}";
 
     private UtilesDependencias() {
     }
@@ -34,11 +32,6 @@ public final class UtilesDependencias {
 
     public static final boolean validarInfo(String info) {
         return info.matches(REG_INFO);
-
-    }
-
-    public static final boolean validarCodigo(String codigo) {
-        return codigo.matches(REG_CODIGO);
 
     }
 }

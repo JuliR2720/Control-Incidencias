@@ -48,8 +48,6 @@
     <div> 
         <a href="/control-incidencias?cmd=visita-landing"> Inicio </a>
         <a href="/control-incidencias?cmd=usuario-login"> Login </a>
-        <a href="/control-incidencias?cmd=usuario-registro"> Registro </a>
-        <a href="/control-incidencias?cmd=visita-accion"> Peliculas </a>
     </div>
     <%}%>
 
