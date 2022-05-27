@@ -17,7 +17,7 @@
             <%@include file="../partial/header.jspf" %>
             <main>
                 <h1> Estas en el Main Administrador </h1>
-                <img src="public/img/astronauta.jpg" alt="astronauta"/>
+                <a href="?cmd=usuario-galeria"> Listado de Usuarios </a>
             </main>
             <%@include file="../partial/footer.jspf" %>
 

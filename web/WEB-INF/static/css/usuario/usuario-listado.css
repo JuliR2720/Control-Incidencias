@@ -1,0 +1,73 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 400px;
+}
+
+#container{
+    height: 100vh;
+    position: relative;
+}
+
+main{
+    min-height: 81vh;
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main > div:nth-child(1) > a > img{
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px;
+
+}
+
+main > div:nth-child(1) > a {
+    width: 230px;
+    height: 230px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+    margin: 3px 3px;
+    font-family:sans-serif;
+}
+
+main > div:nth-child(1) > a > p:nth-child(2){
+    font-size: 25px;
+}
+
+main > div:nth-child(2) > a{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+main > div:nth-child(2){
+    margin: 20px 20px;
+}

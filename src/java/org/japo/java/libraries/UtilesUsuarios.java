@@ -79,10 +79,10 @@ public final class UtilesUsuarios {
 
         // Request > Nombre de Usuario  (mismo nombre del html)
         String user = request.getParameter("user");
-        
+
         // Validar Nombre de Usuario
-        if(!UtilesUsuarios.validarUser(user)){
-        user = UtilesUsuarios.DEF_USER;
+        if (!UtilesUsuarios.validarUser(user)) {
+            user = UtilesUsuarios.DEF_USER;
         }
 
         // Base de Datyos + user > Usuario
@@ -90,10 +90,10 @@ public final class UtilesUsuarios {
 
         // Peticion > Password 
         String pass = request.getParameter("pass");
-        
+
         // Validar Contraseña
-        if(!UtilesUsuarios.validarPass(pass)){
-        pass = UtilesUsuarios.DEF_PASS;
+        if (!UtilesUsuarios.validarPass(pass)) {
+            pass = UtilesUsuarios.DEF_PASS;
         }
 
         // Validar Password 
